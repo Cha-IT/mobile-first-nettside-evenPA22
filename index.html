@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min Mobile-Først Nettside</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="tekst">
+      <h1>Kafé a la kroka</h1>
+    </div>
+
+
+    <div class="menuknapp">
+    <div class="burger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Hjem</a></li>
+        <li><a href="#menu">Meny</a></li>
+        <li><a href="#order">Bestill</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home">
+      <h1>Velkommen til kafé a la kroka!</h1>
+      <img src="img/logo.png" alt="Logo" width="100" height="100">
+      <p>Oppdag vår deilige meny og bestill direkte fra mobilen. Vi har et mangfoldig
+        utvalg av kanelboller! De er de beste i byen! Vår kafé er kjent for sin
+        koselige atmosfære og vennlige personale.
+      </p>
+    </section>
+    <section id="menu">
+      <h2>Meny</h2>
+      <ul class="menu-liste">
+        <!-- Menyelementer vil bli lagt til her dynamisk -->
+      </ul>
+    </section>
+
+    <section id="order">
+
+      <h2>Din Bestilling</h2>
+      <ul id="varebestilling">
+        <!-- Bestillingsliste vil bli lagt til her -->
+      </ul>
+
+      <p id="totalpris"></p>
+      <form id="bestillingsskjema">
+        <label for="navn">Navn:</label>
+        <input type="text" id="navn" name="navn" required>
+    
+        <label for="epost">E-post:</label>
+        <input type="email" id="epost" name="epost" required>
+    
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" required pattern="[0-9]{8}">
+    
+        <button id="submit-order">Send Bestilling</button>
+        <button id="clear-order">Tøm Bestilling</button>
+  
+      </form>
+    
+      <p id="bekreftelse" style="display: none; color: green; font-weight: bold;">Takk for din bestilling!</p>
+
+    </section>
+
+    </section>
+    <section id="contact">
+      <h2>Kontakt Oss</h2>
+      <p><b>Adresse:</b> Nedre bakklandet 1b, 7014 Trondheim</p>
+      <p><b>Telefon:</b> +47 876 54 321</p>
+      <br></br>
+      <p>Du kan følge oss på sosiale medier her:</p>
+      <div class="sosiale-medier">
+        <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.webp" alt="Facebook" width="100" height="100"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="img\instagram.jpg" alt="Instagram" width="100" height="100"></a>
+      <div id="map">
+        <!-- Google Maps-kart vil bli integrert her -->
+      </div>
+    </section>
+  </main>
+
+  <iframe
+ 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841.5686170560556!2d10.403377426316464!3d63.42770105588221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d3199c6e9c751%3A0xa61bc672e39f8b8!2sNedre%20Bakklandet%201b%2C%207014%20Trondheim!5e1!3m2!1sen!2sno!4v1744269288524!5m2!1sen!2sno"
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 10px;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+  <footer>
+    <p>&copy; 2025 Min Kafé</p>
+    <p><b>Åpningstider:</b></p>
+    <p>Mandag-fredag: 08:00-18:00</p>
+    <p>Lørdag-søndag: 10:00-16:00</p>
+  </footer>
+  <script src="script.js"></script>
+
+
+  </section>
+
+
+</body>
+</html>
