@@ -1,0 +1,30 @@
+[
+    {
+        "navn": "kanelbolle",
+        "pris": 30
+    },
+    {
+        "navn": "kanelbolle med sjokolade",
+        "pris": 35
+    },
+    {
+        "navn": "kanelbolle med vanilje",
+        "pris": 35
+    },
+    {
+        "navn": "kanelbolle med eple",
+        "pris": 35
+    },
+    {
+        "navn": "kanelbolle med mandler",
+        "pris": 40
+    },
+    {
+        "navn": "kanelbolle med melis",
+        "pris": 30
+    },
+    {
+        "navn": "kanelbolle med valnøtter",
+        "pris": 40
+    }
+]
